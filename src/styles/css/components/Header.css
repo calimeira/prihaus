@@ -1,0 +1,69 @@
+/* Estilo básico para el header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  .header-logo {
+    height: 50px;
+  }
+  /* Cambia el color de fondo al hacer scroll */
+.header.scrolled {
+    background-color: rgb(23, 23, 23); /* Negro sólido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega sombreado */
+}
+  
+  /* Estilo para el logo */
+  .logo {
+    flex: 1; /* Permite que el logo ocupe el espacio necesario */
+  }
+  
+/* Estilo para centrar el menú de navegación */
+.nav-center {
+    flex: 2; /* Permite que el menú ocupe más espacio */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 116, 255); /* Un color de hover, ajusta según tus preferencias */
+}
+
+/* Estilo para los Link en React */
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+    font-size: 12px;
+}
+
+a:hover {
+    color: rgb(0, 110, 255); /* Un color de hover, ajusta según tus preferencias */
+}
